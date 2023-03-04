@@ -1,4 +1,4 @@
-
+# chinese DUIE2.0
 --------------Stage I-------------------------------------------
 给定的句子为：""
 
@@ -232,5 +232,63 @@ Date：
 period：
 
 
+# english NYT11-HRL
+--------------Stage I-------------------------------------------
+The given sentence is ""
+
+List of given relations: ['location-located_in', 'administrative_division-country', 'person-place_lived', 'person-company', 'person-nationality', 'company-founders', 'country-administrative_divisions', 'person-children', 'country-capital', 'deceased_person-place_of_death', 'neighborhood-neighborhood_of', 'person-place_of_birth']
+
+What relations in the given list might be included in this given sentence?
+If not present, answer: none.
+Respond as a tuple, e.g. (relation 1, relation 2, ......):
+
+--------------Stage II-------------------------------------------
+According to the given sentence, the two entities are of type ('organization', 'person') and the relation between them is 'company-founders', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('organization', 'person'):
+---------------------------
+According to the given sentence, the two entities are of type ('person', 'location') and the relation between them is 'person-place_of_birth', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('person', 'location'):
+---------------------------
+According to the given sentence, the two entities are of type ('person', 'location') and the relation between them is 'deceased_person-place_of_death', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('person', 'location'):
+---------------------------
+According to the given sentence, the two entities are of type ('location', 'location') and the relation between them is 'neighborhood-neighborhood_of', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('location', 'location'):
+---------------------------
+According to the given sentence, the two entities are of type ('person', 'country') and the relation between them is 'person-nationality', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('person', 'country'):
+---------------------------
+According to the given sentence, the two entities are of type ('person', 'organization') and the relation between them is 'person-company', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('person', 'organization'):
+---------------------------
+According to the given sentence, the two entities are of type ('person', 'location') and the relation between them is 'person-place_lived', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('person', 'location'):
+---------------------------
+According to the given sentence, the two entities are of type ('country', 'city') and the relation between them is 'country-capital', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('country', 'city'):
+---------------------------
+According to the given sentence, the two entities are of type ('person', 'person') and the relation between them is 'person-children', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('person', 'person'):
+---------------------------
+According to the given sentence, the two entities are of type ('location', 'location') and the relation between them is 'location-located_in', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('location', 'location'):
+---------------------------
+According to the given sentence, the two entities are of type ('location', 'country') and the relation between them is 'administrative_division-country', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('location', 'country'):
+---------------------------
+According to the given sentence, the two entities are of type ('country', 'location') and the relation between them is 'country-administrative_divisions', find the two entities and list them all by group if there are multiple groups.
+If not present, answer: none.
+Respond in the form of a table with two columns and a header of ('country', 'location'):
 
 
