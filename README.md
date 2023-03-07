@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/ChatGPT-RE%2C%20NER%2C%20EE-blue)
 ![](https://img.shields.io/badge/Tool-zeroshotIE-blue)
 
-Official repository of paper ["Zero-Shot Information Extraction via Chatting with ChatGPT"](https://arxiv.org/pdf/2302.10205.pdf). Please star, watch, and fork our repo for the active updates!
+Official repository of paper ["Zero-Shot Information Extraction via Chatting with ChatGPT"](https://arxiv.org/pdf/2302.10205.pdf). Please star, watch, and fork our repo for the active updates!  
 
 ## Abstract/摘要
 Zero-shot information extraction (IE) aims to
