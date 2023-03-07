@@ -121,3 +121,17 @@ you can see how to get access token.
 ### EE
 ![EE-1](docs/examples/EE-1.png)
 ![EE-3](docs/examples/EE-3.png)
+
+---
+### Citation
+
+Checkout this paper [arxiv: 2302.10205](https://arxiv.org/pdf/2302.10205.pdf)
+
+```
+@article{wei2023zero,
+  title={Zero-Shot Information Extraction via Chatting with ChatGPT},
+  author={Wei, Xiang and Cui, Xingyu and Cheng, Ning and Wang, Xiaobin and Zhang, Xin and Huang, Shen and Xie, Pengjun and Xu, Jinan and Chen, Yufeng and Zhang, Meishan and others},
+  journal={arXiv preprint arXiv:2302.10205},
+  year={2023}
+}
+```
