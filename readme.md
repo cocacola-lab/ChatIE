@@ -31,7 +31,9 @@ models with limited resources.
 
 ## Examples
 ### RE
-![re-1](RE-1.png)
+![re-1](examples/RE-1.png)
+![re-4](examples/RE-4.png)
+![re-3](examples/RE-3.png)
 
 
 
