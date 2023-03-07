@@ -29,6 +29,13 @@ models with limited resources.
 ## Results
 ![result](result.jpeg)
 
+## Tools 
+We provide two IE extractio tools based on ChatIE and GPT-3.5.   
+You can see in:  
+- [ChatIETool](https://github.com/cocacola-lab/ChatIETool)
+- [GPT4IE](https://github.com/cocacola-lab/GPT4IE)
+
+
 ## Examples
 ### RE
 ![re-1](examples/RE-1.png)
