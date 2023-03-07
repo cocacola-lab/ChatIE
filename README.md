@@ -32,6 +32,7 @@ models with limited resources.
 
 ## Tools 
 **NOTICE:** because official api is not available in domestic, so we use api from [revChatGPT](https://github.com/acheong08/ChatGPT) and v1 version. But it's **too slow**, so we advise you use the tool offline for study. We will update the api further in the future (**TODO**).   
+
 we also provide a IE tool based on GPT3.5, you can see in [GPT4IE](https://github.com/cocacola-lab/GPT4IE)
 ### Description
 ChatIE (Zero-Shot Information Extraction via Chatting with ChatGPT) is a open-source and powerful IE tool [demo](http://124.221.16.143:5000/). Enhanced by ChatGPT and prompting, it aims to automatically extract **structured information** from a **raw sentence** and make a valuable in-depth analysis of the input sentence. Harnessing valuable structured information helps corporations make incisive and business–improving decisions.  
