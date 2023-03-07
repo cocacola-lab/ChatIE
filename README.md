@@ -6,7 +6,7 @@
 
 Official repository of paper ["Zero-Shot Information Extraction via Chatting with ChatGPT"](https://arxiv.org/pdf/2302.10205.pdf). Please star, watch, and fork our repo for the active updates!  
 
-## Abstract/摘要
+## Abstract
 Zero-shot information extraction (IE) aims to
 build IE systems from the unannotated text.
 It is challenging due to involving little human intervention. Challenging but worthwhile, zero-shot IE reduces the time and effort that data labeling takes. Recent efforts
