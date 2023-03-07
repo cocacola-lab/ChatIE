@@ -30,7 +30,7 @@ models with limited resources.
 ## Results
 ![result](docs/result.jpeg)
 
-## Tools 
+## Tools🧰 
 **NOTICE:** because official api is not available in domestic, so we use api from [revChatGPT](https://github.com/acheong08/ChatGPT) and v1 version. But it's **too slow**, so we advise you use the tool offline for study. We will update the api further in the future (**TODO**).   
 
 we also provide a IE tool based on GPT3.5, you can see in [GPT4IE](https://github.com/cocacola-lab/GPT4IE)
