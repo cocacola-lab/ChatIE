@@ -1,4 +1,4 @@
-# ChatIE
+# ChatIE🐬
 
 ![](https://img.shields.io/badge/Languages-%20English%2C%20Chinese-brightgreen) 
 ![](https://img.shields.io/badge/ChatGPT-RE%2C%20NER%2C%20EE-blue)
