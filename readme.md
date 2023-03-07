@@ -34,6 +34,9 @@ models with limited resources.
 ![re-1](examples/RE-1.png)
 ![re-4](examples/RE-4.png)
 ![re-3](examples/RE-3.png)
-
-
-
+### NER
+![ner-3](examples/NER-3.png)
+![ner-2](examples/NER-2.png)
+### EE
+![EE-1](examples/EE-1.png)
+![EE-3](examples/EE-3.png)
