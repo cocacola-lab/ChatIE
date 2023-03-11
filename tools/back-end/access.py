@@ -6,7 +6,6 @@ import re
 import openai
 
 df_access = [
-    ('1','2'),
     ('@gYaKlfLGewYYkmZb7T3BlbkFJouvA5wegTYHbPcgWgI4D','sk-1Ni')
 ]
 
