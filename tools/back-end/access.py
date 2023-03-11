@@ -7,7 +7,7 @@ import openai
 
 df_access = [
     #'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',
-    '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',
+    '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',
 ]
 
 df_ret = {
@@ -359,7 +359,7 @@ def chat_ee(inda, chatbot):
 
 
 def chat(mess):
-    #openai.proxy = 'http://127.0.0.1:10809'
+    openai.proxy = 'http://127.0.0.1:10809'
     responde = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=mess

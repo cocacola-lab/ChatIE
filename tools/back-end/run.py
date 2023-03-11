@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
-from access_v1 import chatie
+#from access_v1 import chatie # 非官方接口
+from access import chatie # 官方接口
 import json
  
 app = Flask(__name__, template_folder='../front-end', static_folder='../front-end')
@@ -21,6 +22,6 @@ def updateStaff():
     return json.dumps(post_data)
  
 if __name__=="__main__":
-    app.run(debug=True, port=5000, threaded=True) 
+    app.run(debug=True, port=3000, threaded=True) 
     # processes多进程占用资源多，所有子进程的东西都是各一份；threaded多线程，共享全局变量。
     # threaded默认true 1.1版本以后
