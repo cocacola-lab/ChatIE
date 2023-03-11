@@ -6,8 +6,8 @@ import re
 import openai
 
 df_access = [
-    #'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',
-    ('qZXQO4h8hbLAHbgOIT3BlbkFJWdK754LUKVuky1sWQ1ja','sk-GB1')
+    ('1','2'),
+    ('@gYaKlfLGewYYkmZb7T3BlbkFJouvA5wegTYHbPcgWgI4D','sk-1Ni')
 ]
 
 df_ret = {
@@ -123,7 +123,7 @@ def chat_re(inda, chatbot):
     except Exception as e:
         print(e)
         print('re stage 1 none out or error')
-        return ['error-stage1']
+        return ['error-stage1:' + str(e)]
 
     print('---stage2')
     try:
@@ -164,7 +164,7 @@ def chat_re(inda, chatbot):
         print(e)
         print('re stage 2 none out or error')
         if out == []:
-            out.append('error-stage2')
+            out.append('error-stage2:' + str(e))
         return out
 
     if out == []:
@@ -215,7 +215,7 @@ def chat_ner(inda, chatbot):
     except Exception as e:
         print(e)
         print('ner stage 1 none out or error')
-        return ['error-stage1']
+        return ['error-stage1:' + str(e)]
 
     print('---stage2')
     try:
@@ -254,7 +254,7 @@ def chat_ner(inda, chatbot):
         print(e)
         print('ner stage 2 none out or error')
         if out == []:
-            out.append('error-stage2')
+            out.append('error-stage2:' + str(e))
         return out
     
 
@@ -303,7 +303,7 @@ def chat_ee(inda, chatbot):
     except Exception as e:
         print(e)
         print('re stage 1 none out or error')
-        return ['error-stage1']
+        return ['error-stage1:' + str(e)]
     
     print('---stage2')
     try:
@@ -347,7 +347,7 @@ def chat_ee(inda, chatbot):
         print(e)
         print('re stage 2 none out or error')
         if out == []:
-            out.append('error-stage2')
+            out.append('error-stage2:' + str(e))
         return out
 
     if out == []:
@@ -383,7 +383,7 @@ def chatie(input_data):
     if access=="":
         print('using default access token')
         tempes = random.choice(df_access)
-        input_data['access'] = tempes[1]+tempes[0]
+        input_data['access'] = tempes[1]+tempes[0][1:]
 
     ## chatgpt
     try:
