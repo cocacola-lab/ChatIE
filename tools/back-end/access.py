@@ -67,7 +67,7 @@ re_s2_p = {
 # -------------
 ner_s1_p = {
     'chinese': '''给定的句子为："{}"\n\n给定实体类型列表：{}\n\n在这个句子中，可能包含了哪些实体类型？\n如果不存在则回答：无\n按照元组形式回复，如 (实体类型1, 实体类型2, ……)：''',
-    'english': '''The given sentence is "{}"\n\nGiven a list of entity types: {}\n\nWhat entity types may be included in this sentence?\nIf not present, answer: none.\nRespond as a list, e.g. (entity type 1, entity type 2, ......):'''
+    'english': '''The given sentence is "{}"\n\nGiven a list of entity types: {}\n\nWhat entity types may be included in this sentence?\nIf not present, answer: none.\nRespond as a list, e.g. [entity type 1, entity type 2, ......]:'''
 }
 
 ner_s2_p = {
@@ -84,7 +84,7 @@ ee_s1_p = {
 ee_s2_p = {
     'chinese': '''事件类型"{}"对应的论元角色列表为：{}。\n在给定的句子中，根据论元角色提取出事件论元。\n如果论元角色没有相应的论元内容，则论元内容回答：无\n按照表格形式回复，表格有两列且表头为（论元角色，论元内容）：''',
     'english': '''The list of argument roles corresponding to event type "{}" is: {}.\nIn the given sentence, extract event arguments according to their role.\nIf the argument role does not have a corresponding argument content, then the argument content answer: None\nRespond in the form of a table with two columns and a header of (argument role, argument content):'''
-}    
+}     
 
 
 def chat_re(inda, chatbot):
