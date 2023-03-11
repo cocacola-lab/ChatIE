@@ -359,6 +359,7 @@ def chat_ee(inda, chatbot):
 
 
 def chat(mess):
+    #openai.proxy = 'http://127.0.0.1:10809'
     responde = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=mess
