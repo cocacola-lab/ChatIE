@@ -264,7 +264,7 @@ function App() {
     <div className='container'>
       <h1 className="headerText">ChatIE </h1>
       <p className='opensourceText'><a href="https://arxiv.org/pdf/2302.10205.pdf">ChatIE paper</a>&nbsp;|&nbsp;
-      <a href="https://github.com/cocacola-lab/GPT4IE">ChatIE tool</a>🎉</p>
+      <a href="https://github.com/cocacola-lab/ChatIE">ChatIE tool</a>🎉</p>
       <p className='subheaderText'>ChatIE (Zero-Shot Information Extraction via Chatting with ChatGPT) is a open-source and powerful IE tool. Enhanced by ChatGPT and prompting, it aims  to automatically extract structured information from a raw sentence and make a valuable in-depth analysis of the input sentence.
       We support the following functions:</p>
       <div>
