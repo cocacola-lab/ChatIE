@@ -173,7 +173,7 @@ def chat_re(inda, chatbot):
     
     print(mess)
     # out = [('滴答', '歌手', '陈思成'), ('兰花指', '歌手', '阿里郎'), ('滴答', '歌手', '张碧晨')]
-    return out
+    return out, mess
 
 def chat_ner(inda, chatbot):
     print("---NER---")
@@ -264,7 +264,7 @@ def chat_ner(inda, chatbot):
     
     print(mess)
     #out = [('陈思成', 'PER'), ('北京', 'LOC')]
-    return out
+    return out, mess
 
 def chat_ee(inda, chatbot):
     print("---EE---")
@@ -354,7 +354,7 @@ def chat_ee(inda, chatbot):
     
     print(mess)
     #out = [{'晋级':{'晋级方': '阿根廷', '时间': '2022年'}}]
-    return out
+    return out, mess
 
 
 def chat(mess):
@@ -415,11 +415,11 @@ def chatie(input_data):
 
     # get output from chatgpt        
     if task == 'RE':
-        input_data['result'] =  chat_re(input_data, chatbot)
+        input_data['result'], input_data['mess'] =  chat_re(input_data, chatbot)
     elif task == 'NER':
-        input_data['result'] =  chat_ner(input_data, chatbot)
+        input_data['result'], input_data['mess'] =  chat_ner(input_data, chatbot)
     else:
-        input_data['result'] =  chat_ee(input_data, chatbot)
+        input_data['result'], input_data['mess'] =  chat_ee(input_data, chatbot)
     
     print(input_data)
 
