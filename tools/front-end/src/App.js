@@ -306,9 +306,9 @@ function App() {
         </div>
         <div className='inputContainer'>
           <input className="searchBar" placeholder="Input sentence..."></input>
-          <input className="typeList" id="prompt1" placeholder="re/ner/ee type list;
+          <input className="typeList" id="prompt1" placeholder="Optional,re/ner/ee type list;
           like {'singer':['song','person']}/['LOC']/{'Divorce':['Person','Time','Place']}"></input>
-          <input className="apiKeyTextField" type="password" placeholder="Enter your OpenAI access token..."></input>
+          <input className="apiKeyTextField" type="password" placeholder="Optional, Enter your OpenAI access token..."></input>
           <button className="generateButton" onClick={createIE}>Generate</button>
           <button className="clearButton" onClick={clearState}>Clear</button>
         </div>
@@ -320,7 +320,7 @@ function App() {
         <ul className='ulC'>{lists}</ul>
       </div>
       <p className='footer'>Tip: you can clear output by clicking Clear button for aesthetics
-      <br></br>Note: Except for the mandatory "Input sentence" and "OpenAI API key" fields, other items can be optional.
+      <br></br>Note: Except for the mandatory "Input sentence", other items can be optional.
       <br></br>We set the default relation/entity/event type list; subject type list; object type list. Change the default setting and extract specific information by reset the type lists.</p>
     </div>
   );
