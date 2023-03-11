@@ -7,7 +7,7 @@ import openai
 
 df_access = [
     #'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',
-    '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',
+    ('qZXQO4h8hbLAHbgOIT3BlbkFJWdK754LUKVuky1sWQ1ja','sk-GB1')
 ]
 
 df_ret = {
@@ -383,7 +383,7 @@ def chatie(input_data):
     if access=="":
         print('using default access token')
         tempes = random.choice(df_access)
-        input_data['access'] = tempes
+        input_data['access'] = tempes[1]+tempes[0]
 
     ## chatgpt
     try:
