@@ -31,9 +31,9 @@ models with limited resources.
 ![result](docs/result.jpeg)
 
 ## Tools🧰 
-**UPDATE：** **we use the official api, the tool becomes more faster!!! if the key exceed limits please tell us. Moreover, the response speed depends on the official openai chatgpt api. (sometimes, the official is too crowded and the speed will be slow.)**  
+**UPDATE：** **we use the official api, the tool becomes more faster!!! if the key exceed limits please tell us.**  
 
-**NOTICE：** **you better use your own openai key because if our default account is used by multiple people at the same time, the account will be overloaded.**  
+**NOTICE：** **The response speed depends on the official openai chatgpt api. (sometimes, the official is too crowded and the speed will be slow or the chatgpt will be overloaded.)** Moreover, you better use your own openai key because if our default account is used by multiple people at the same time, the account will be overloaded.  
 
 ~~**NOTICE:** because official api is not available in domestic, so we use api from [revChatGPT](https://github.com/acheong08/ChatGPT) and v1 version. But it's **too slow**, so we advise you use the tool offline for study. We will update the api further in the future (**TODO**).~~   
 
