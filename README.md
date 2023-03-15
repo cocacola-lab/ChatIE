@@ -110,8 +110,6 @@ react+flask
 2. Run `npm run start`. GPT4IE should open up in a new browser tab.  
 3. cd `back-end` and Run `python run.py`.  
 4. note: node-version v14.17.4  npm-version 9.6.0  
-5. we use api from [revChatGPT](https://github.com/acheong08/ChatGPT) and v1 version,
-you can see how to get access token.
 
 
 ## Examples
