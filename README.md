@@ -107,7 +107,7 @@ This task aims to extract event from plain texts, such as **{Life-Divorce: {Pers
 ### Setup
 react+flask  
 1. cd `front-end` and Run `npm install` to download required dependencies.  
-2. Run `npm run start`. GPT4IE should open up in a new browser tab.  
+2. Run `npm run start`. ChatIE should open up in a new browser tab.  
 3. cd `back-end` and Run `python run.py`.  
 4. note: node-version v14.17.4  npm-version 9.6.0  
 
