@@ -122,7 +122,7 @@ def chat_re(inda, chatbot):
     except Exception as e:
         print(e)
         print('re stage 1 none out or error')
-        return ['error-stage1:' + str(e)]
+        return ['error-stage1:' + str(e)], mess
 
     print('---stage2')
     try:
@@ -164,7 +164,7 @@ def chat_re(inda, chatbot):
         print('re stage 2 none out or error')
         if out == []:
             out.append('error-stage2:' + str(e))
-        return out
+        return out, mess
 
     if out == []:
         out.append('none-none')
@@ -214,7 +214,7 @@ def chat_ner(inda, chatbot):
     except Exception as e:
         print(e)
         print('ner stage 1 none out or error')
-        return ['error-stage1:' + str(e)]
+        return ['error-stage1:' + str(e)], mess
 
     print('---stage2')
     try:
@@ -254,7 +254,7 @@ def chat_ner(inda, chatbot):
         print('ner stage 2 none out or error')
         if out == []:
             out.append('error-stage2:' + str(e))
-        return out
+        return out, mess
     
 
     if out == []:
@@ -302,7 +302,7 @@ def chat_ee(inda, chatbot):
     except Exception as e:
         print(e)
         print('re stage 1 none out or error')
-        return ['error-stage1:' + str(e)]
+        return ['error-stage1:' + str(e)], mess
     
     print('---stage2')
     try:
@@ -347,7 +347,7 @@ def chat_ee(inda, chatbot):
         print('re stage 2 none out or error')
         if out == []:
             out.append('error-stage2:' + str(e))
-        return out
+        return out, mess
 
     if out == []:
         out.append('none-none')
