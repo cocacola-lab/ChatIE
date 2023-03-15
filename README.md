@@ -31,7 +31,7 @@ models with limited resources.
 ![result](docs/result.jpeg)
 
 ## Tools🧰 
-**UPDATE：** **we use the official api, the tool becomes more faster!!! if the key exceed limits please tell us. Moreover, the response speed depends on the official openai chatgpt api**  
+**UPDATE：** **we use the official api, the tool becomes more faster!!! if the key exceed limits please tell us. Moreover, the response speed depends on the official openai chatgpt api. (sometimes, the official is too crowded and the speed will be slow.)**  
 
 **NOTICE：** **you better use your own openai key because if our default account is used by multiple people at the same time, the account will be overloaded.**  
 
