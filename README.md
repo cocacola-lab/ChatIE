@@ -110,6 +110,7 @@ react+flask
 2. Run `npm run start`. ChatIE should open up in a new browser tab.  
 3. cd `back-end` and Run `python run.py`.  
 4. note: node-version v14.17.4  npm-version 9.6.0  
+5. you may need to configure **proxy** on your machine.  
 
 
 ## Examples
