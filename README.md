@@ -126,7 +126,10 @@ react+flask
 ![EE-3](docs/examples/EE-3.png)
 
 ---
-### Citation
+## Data usage policy
+We are committed to improving our project and providing you with the best possible experience. To achieve this, we will collect your data to help us understand how you interact with our project and identify areas for improvement. We value the privacy and security of your data and ensure the data only for the purposes of improving our project.
+
+## Citation
 
 Checkout this paper [arxiv: 2302.10205](https://arxiv.org/pdf/2302.10205.pdf)
 
