@@ -1,4 +1,17 @@
 # chinese DUIE2.0
+-------Vanilla Prompt(单轮)-----
+假设你是一个实体关系五元组抽取模型。我会给你头实体类型列表subject_types，尾实体类型列表object_types，关系列表relations，再给你一个句子，请你根据这三个列表抽出句子中的subject和object，并组成五元组，且形式为(subject, subject_type, relation, object, object_type)。
+
+给定的句子为："{}"
+
+relations：['所属专辑', '成立日期', '海拔', '官方语言', '占地面积', '父亲', '歌手', '制片人', '导演', '首都', '主演', '董事长', '祖籍', '妻子', '母亲', '气候', '面积', '主角', '自', '校长', '丈夫', '主持人', '主题曲', '修业年限', '作曲', '号', '上映时间', '票房', '饰演', '配音', '获奖']
+
+subject_types：['国家', '行政区', '文学作品', '人物', '影视作品', '学校', '图书作品', '地点', '历史人物', '景点', '歌曲', '学科专业', '企业', '电视综艺', '机构', '企业/品牌', ' 娱乐人物']
+
+object_types：['国家', '人物', 'Text', 'Date', '地点', '气候', '城市', '歌曲', '企业', 'Number', '音乐专辑', '学校', '作品', '语言']
+
+在给定的句子中，可能包含了哪些五元组？请按照形式(subject, subject_type, relation, object, object_type)回答：
+
 --------------Stage I-------------------------------------------
 给定的句子为：""
 
@@ -238,6 +251,18 @@ period：
 
 
 # english NYT11-HRL
+-------Vanilla Prompt(单轮)-----
+Suppose you are an entity-relationship triple extraction model. I'll give you list of head entity types: subject_types, list of tail entity types: object_types, list of relations: relations. Give you a sentence, please extract the subject and object in the sentence based on these three lists, and form a triplet in the form of (subject, relation, object).
+
+The given sentence is "".
+
+relations: ['location-contains', 'administrative_division-country', 'person-place_lived', 'person-company', 'person-nationality', 'company-founders', 'country-administrative_divisions', 'person-children', 'country-capital', 'deceased_person-place_of_death', 'neighborhood-neighborhood_of', 'person-place_of_birth']
+
+subject_types: ['organization', 'person', 'location', 'country']
+
+object_types: ['person', 'location', 'country', 'organization', 'city']
+
+In the given sentence, what triples might be contained? Please answer in the form (subject, relation, object):
 --------------Stage I-------------------------------------------
 The given sentence is ""
 
