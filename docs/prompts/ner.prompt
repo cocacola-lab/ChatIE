@@ -1,4 +1,7 @@
 # chinese MSRA
+--------------Vanilla Prompt(单轮)-------------------------------------
+假设你是一个命名实体识别模型，现在我会给你一个句子，请根据我的要求识别出每个句子中的实体，实体类型只要三种：组织机构、地点、人物。请用列表的形式展示，其中列表的第一个元素为实体名称，第二个元素为实体类型。如果该句子中不含有指定的实体类型，你可以输出:[]。输出格式形为：["实体名称1", "实体类型1"], ["实体名称2", "实体类型2"], …。除了这个列表以外请不要输出别的多余的话。这个句子是：""
+
 --------------Stage I-------------------------------------------
 
 --------------Stage II-------------------------------------------
@@ -8,6 +11,10 @@
 
 
 # english conllpp
+--------------Vanilla Prompt(单轮)-------------------------------------
+Let's say you are a named entity recognition model, I'm going to give you a sentence and ask you to identify the entities and label the entity category. There will only be 4 types of entities: ['LOCATION', 'PERSON', 'ORGANIZATION', 'MISC']. Please present your results in list form. The sentence is: "".
+Make the list like: ['entity name1', 'entity type1'],['entity name2', 'entity type2']......
+
 --------------Stage I-------------------------------------------
 
 --------------Stage II-------------------------------------------
