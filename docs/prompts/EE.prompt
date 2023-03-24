@@ -47,3 +47,6 @@ Give a sentence: '{text}'.
 Please extract the event arguments of the above sentence according to the argument roles, and return them in the form of a table.
 The header of the table is 'event type', 'argument role', 'argument content'.
 If no argument role has a corresponding argument content, the argument content returns "None".
+
+
+
