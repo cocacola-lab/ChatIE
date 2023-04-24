@@ -359,6 +359,7 @@ def chat_ee(inda, chatbot):
 
 def chat(mess):
     openai.proxy = 'http://127.0.0.1:10809' # 根据自己服务器的vpn情况设置proxy；如果是在自己电脑线下使用，可以在电脑上开vpn然后不加此句代码。
+    #openai.api_base = "https://closeai.deno.dev/v1" 或者利用反向代理openai.com（注释掉上面那句代码）
     responde = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=mess
