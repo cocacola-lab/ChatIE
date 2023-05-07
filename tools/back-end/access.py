@@ -4,6 +4,7 @@ import ast
 from revChatGPT.V1 import Chatbot
 import re
 import openai
+import itertools
 
 df_access = [
     ('@gYaKlfLGewYYkmZb7T3BlbkFJouvA5wegTYHbPcgWgI4D','sk-1Ni')
@@ -356,11 +357,29 @@ def chat_ee(inda, chatbot):
     #out = [{'晋级':{'晋级方': '阿根廷', '时间': '2022年'}}]
     return out, mess
 
+# 封装openai Create,实现换key功能
+with open("tokens.txt", "r") as f:
+    keys = f.readlines()
+    keys = [key.strip() for key in keys]
+
+all_keys = itertools.cycle(keys)
+
+def create(**args):
+    global all_keys
+    openai.api_key = next(all_keys)
+
+    try:
+        result = openai.ChatCompletion.create(**args)
+    except openai.error.RateLimitError:
+        result = create(**args)
+    
+    return result
+
 
 def chat(mess):
-    openai.proxy = 'http://127.0.0.1:10809' # 根据自己服务器的vpn情况设置proxy；如果是在自己电脑线下使用，可以在电脑上开vpn然后不加此句代码。
-    #openai.api_base = "https://closeai.deno.dev/v1" 或者利用反向代理openai.com（代理获取：https://github.com/justjavac/openai-proxy）（注释掉上面那句代码）
-    responde = openai.ChatCompletion.create(
+    #openai.proxy = 'http://127.0.0.1:10809' # 根据自己服务器的vpn情况设置proxy；如果是在自己电脑线下使用，可以在电脑上开vpn然后不加此句代码。
+    openai.api_base = "https://chatie.deno.dev/v1" #或者利用反向代理openai.com（代理获取：https://github.com/justjavac/openai-proxy）（注释掉上面那句代码）
+    responde = create(
         model="gpt-3.5-turbo",
         messages=mess
     )
@@ -387,7 +406,7 @@ def chatie(input_data):
 
     ## chatgpt
     try:
-        openai.api_key = input_data['access']
+        #openai.api_key = input_data['access']
         chatbot = chat
     except Exception as e:
         print('---chatbot---')
