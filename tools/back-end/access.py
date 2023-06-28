@@ -117,8 +117,9 @@ def chat_re(inda, chatbot):
             rels = [temp[1:-1].split(',') for temp in res1]
             rels = list(set([re.sub('[\'"]','', j).strip() for i in rels for j in i]))
             #print(rels)
-        else:
-            rels = []
+        else: # 说明正则没提取到，可能是单个类型的情况
+            text1 = text1.strip().rstrip('.')
+            rels = [text1]
         print(rels)
     except Exception as e:
         print(e)
@@ -213,8 +214,9 @@ def chat_ner(inda, chatbot):
             rels = [temp[1:-1].split(',') for temp in res1]
             rels = list(set([re.sub('[\'"]','', j).strip() for i in rels for j in i]))
             #print(rels)
-        else:
-            rels = []
+        else: # 说明正则没提取到，可能是单个类型的情况
+            text1 = text1.strip().rstrip('.')
+            rels = [text1]
         print(rels)
     except Exception as e:
         print(e)
