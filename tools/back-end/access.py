@@ -144,6 +144,10 @@ def chat_re(inda, chatbot):
                 res2 = re.findall(r'\|.*?\|.*?\|', text2)
                 print(res2)
 
+                if res2==[]:
+                    res2 = re.findall(r'.*\|.*', text2)
+                    print(res2)
+
                 # 进一步处理结果
                 count=0
                 for so in res2:
@@ -235,6 +239,10 @@ def chat_ner(inda, chatbot):
                 res2 = re.findall(r'\|.*?\|.*?\|', text2)
                 print(res2)
 
+                if res2==[]:
+                    res2 = re.findall(r'.*\|.*', text2)
+                    print(res2)
+
                 # 进一步处理结果
                 count=0
                 for so in res2:
@@ -325,6 +333,10 @@ def chat_ee(inda, chatbot):
                 # 正则提取结果
                 res2 = re.findall(r'\|.*?\|.*?\|', text2)
                 print(res2)
+                
+                if res2==[]:
+                    res2 = re.findall(r'.*\|.*', text2)
+                    print(res2)
 
                 # 进一步处理结果
                 single_out = {r: {}}
